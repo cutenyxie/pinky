@@ -1,5 +1,7 @@
 # Pinky
 
+Still working on this, clearly! But hey, let's keep a copy on GitHub.
+
 My own mods will be typed in here eventually ;)  For now, this is what was said about the original theme... 
 
 # Abstration
