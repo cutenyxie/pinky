@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Nixie+One|Calligraffitti);
+@import url(../css/fontello.css);
 h1 {
   font-size: 2.75rem; }
 
@@ -278,6 +279,12 @@ table {
 .icon-facebook:hover {
   color: #46629E; }
 
+.icon-globe:hover {
+  color: #8B008B; }
+
+.big-icon {
+  font-size: 2em; }
+
 .site-head {
   text-align: center;
   color: whitesmoke;
@@ -450,6 +457,8 @@ ul.author-meta {
   .poweredby .icon-ghost:before {
     font-size: 1rem;
     margin-right: 0.2em; }
+.poweredby .icon-github {
+  text-decoration: none; }
 
 @media only screen and (min-width: 768px) {
   .site-head {
@@ -488,8 +497,7 @@ ul.author-meta {
     bottom: 0;
     padding: 8px;
     width: 100%;
-    font-family: Corbel, Verdana, sans-serif;
-    font-size: 0.9em; }
+    font-family: Corbel, Verdana, sans-serif; }
     .site-footer a {
       color: whitesmoke;
       text-decoration: underline; }

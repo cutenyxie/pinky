@@ -160,7 +160,15 @@ table {
 	color: #46629E;
 	}
 }
+.icon-globe {
+	&:hover {
+	color: #8B008B;
+	}
+}
 
+.big-icon {
+	font-size: 2em;
+}
 
 // ========= Site Head =========
 
@@ -474,6 +482,9 @@ ul.author-meta {
 			margin-right: 0.2em;
 		}
 	}
+	.icon-github {
+		text-decoration: none;
+	}
 }
 
 
@@ -508,7 +519,7 @@ ul.author-meta {
 	padding: 8px;
 	width: 100%;
 	font-family: $footer-font-family;
-	font-size: 0.9em;
+
 	a {
 		color: $base-bg;
 		text-decoration: underline;
