@@ -43,7 +43,10 @@ body {
 
 main {
 	@include clearfix;
+
 }
+
+
 
 // Link Styles
 
@@ -112,6 +115,8 @@ table {
 		font-style: normal;
 		font-weight: normal;
 		font-variant: normal;
+		font-size: 2em;
+  		margin-right: .2em;
 		text-transform: none;
 		line-height: 1;
 		text-decoration: none;
@@ -123,31 +128,63 @@ table {
 .icon-ghost:before {
     content: "\e000";
 }
-.icon-feed:before {
+.icon-feed {
+	&:before {
     content: "\e001";
-}
-.icon-twitter:before {
+	}
+	&:hover {
+	color: #EF8634;
+	}
+}	
+.icon-twitter {
+	&:before {
     content: "\e002";
-    font-size: 1.1em;
+    }
+    &:hover {
+	color: #55acee;
+	}
 }
-.icon-google-plus:before {
+.icon-google-plus {
+	&:before {
     content: "\e003";
+	}
+	&:hover {
+	color: #DD4B39;
+	}
 }
-.icon-facebook:before {
+.icon-facebook {
+	&:before {
     content: "\e004";
+	}
+	&:hover {
+	color: #46629E;
+	}
+}
+.icon-globe {
+	&:hover {
+	color: #8B008B;
+	}
 }
 
+.big-icon {
+	font-size: 2em;
+}
 
 // ========= Site Head =========
 
 .site-head {
-	position: relative;
-	width: 100%;
+	
 	text-align: center;
 	color: $base-bg;
 	background: $secondary no-repeat center center;
 	background-size: cover;
 	@include clearfix;
+
+	a {
+		color: $base-bg;
+		text-decoration: none;
+		
+	}
 
 	.site-head-content {
 		margin: 4rem 0;
@@ -156,8 +193,9 @@ table {
 	.blog-logo {
 		text-decoration: none;
 		img {
+			@include border-radius(50%);
 			display: block;
-			width: auto;
+			width: 40%;
 			margin: 0 auto;
 		}
 	}
@@ -169,9 +207,9 @@ table {
 	}
 
 	h2.blog-description {
-		font-size: 1.125rem;
+		font-size: 1.7rem;
 		font-weight: 300;
-		font-family: $base-font-family;
+		font-family: $blogdesc-font-family;
 		max-width: rem-calc(700);
 		margin-left: auto;
 		margin-right: auto;
@@ -270,8 +308,9 @@ table {
 		}
 
 		img {
+			@include border-radius(50%);
 			display: block;
-			width: auto;
+			width: 30%;
 			margin: 0 auto;
 		}
 		
@@ -299,6 +338,7 @@ table {
 .post-footer {
 	position: relative;
 	padding: 4rem 0;
+	text-align: center;
 }
 
 
@@ -325,7 +365,7 @@ ul.author-meta {
 .post-footer .share a {
 	display: inline-block;
 	margin: 1rem 1.6rem 1.6rem 0;
-	color: $tertiary;
+
 	text-decoration: none;
 
 	&:before {
@@ -336,9 +376,7 @@ ul.author-meta {
 		text-decoration: underline;
 	}
 
-	&:hover {
-		color: $primary;
-	}
+	
 }
 
 
@@ -414,14 +452,11 @@ ul.author-meta {
 
 // ========= Global Footer Styles =========
 
-.site-footer {
-	position: relative;
-	font-family: $header-font-family;
-	color: $tertiary;
+.main-footer {
 	text-align: center;
-
+	font-family: $footer-font-family;
 	a {
-		color: $tertiary;
+		color: $primary;
 		text-decoration: underline;
 		
 		&:hover {
@@ -429,19 +464,10 @@ ul.author-meta {
 		}
 	}
 	
-	.subscribe {
-		text-align: center;
-		text-decoration: none;
+}
 
-		&:before {
-			text-decoration: none;
-			padding-right: 0.5em;
-		}
-		
-		span {
-			text-decoration: underline;
-		}
-	}
+.site-footer {
+	display: none;
 }
 
 
@@ -456,14 +482,61 @@ ul.author-meta {
 			margin-right: 0.2em;
 		}
 	}
+	.icon-github {
+		text-decoration: none;
+	}
 }
 
 
-// ========= Media Quieries =========
+// ========= Media Queries =========
 
 @media #{$screen} {}
 
-@media #{$small} {}
+@media #{$small} {
+	.site-head {
+	position: fixed;
+	width: 35%;
+	height: 100%;
+	text-align: center;
+	color: $base-bg;
+	background: $secondary no-repeat center center;
+	background-size: cover;
+	@include clearfix;
+	}
+
+	main {
+	@include clearfix;
+ 	&.index-page, &.tag-content {
+	width: 65%;
+	float: right;
+	}
+	}
+
+.site-footer {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	padding: 8px;
+	width: 100%;
+	font-family: $footer-font-family;
+
+	a {
+		color: $base-bg;
+		text-decoration: underline;
+		
+		&:hover {
+			color: $primary-alt;
+		}
+	}
+		
+		
+	}
+
+	.main-footer {
+		display: none;
+	}
+
+}
 
 @media #{$medium} {}
 

@@ -59,3 +59,23 @@
 		}
 	}
 }
+
+// ========= Colors =========
+
+@mixin css-gradient($from, $to, $start, $end) {
+    background: $from;
+    background: -webkit-linear-gradient(left, $from $start, $to $end);
+    background: -moz-linear-gradient(left, $from $start, $to $end);
+    background: -o-linear-gradient(left, $from $start, $to $end);
+    background: linear-gradient(to right, $from $start, $to $end);
+}
+
+
+// ========= Border Radius =========
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
