@@ -4,16 +4,28 @@
 	the {body} of the default.hbs template, which contains our header/footer. }}
 
 {{! The big featured header on the homepage, with the site logo and description }}
-<header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+
+<header class="site-head" {{#if @blog.cover}}style="background: linear-gradient(
+      rgba(252, 12, 252, 0.35), 
+      rgba(252, 12, 252, 0.35)
+    ), url({{@blog.cover}});"{{/if}}>
+
 	<div class="site-head-content inner">
 		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
 		<h1 class="blog-title">{{@blog.title}}</h1>
 		<h2 class="blog-description">{{@blog.description}}</h2>
+		<a class="icon-facebook" href="http://www.facebook.com/nyxie/"></a>
+		<a class="icon-twitter" href="http://www.twitter.com/nyxie"></a>
+		<a class="icon-feed" href="{{@blog.url}}/rss/"></a>
+		<div class="site-footer">
+			 <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
+			 <section class="poweredby">Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a></section>
+		</div>
 	</div>
 </header>
 
 {{! The main content area on the homepage }}
-<main class="content" role="main">
+<main class="content index-page" role="main">
 
 	{{! Each post will be output using this markup }}
 	{{#foreach posts}}
