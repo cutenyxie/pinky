@@ -175,9 +175,7 @@ table {
 	a {
 		color: $base-bg;
 		text-decoration: none;
-		&:hover {
-			opacity: 0.9;
-		}
+		
 	}
 
 	.site-head-content {
@@ -201,9 +199,9 @@ table {
 	}
 
 	h2.blog-description {
-		font-size: 1.125rem;
+		font-size: 1.7rem;
 		font-weight: 300;
-		font-family: $base-font-family;
+		font-family: $blogdesc-font-family;
 		max-width: rem-calc(700);
 		margin-left: auto;
 		margin-right: auto;
@@ -302,8 +300,9 @@ table {
 		}
 
 		img {
+			@include border-radius(50%);
 			display: block;
-			width: auto;
+			width: 30%;
 			margin: 0 auto;
 		}
 		
@@ -331,6 +330,7 @@ table {
 .post-footer {
 	position: relative;
 	padding: 4rem 0;
+	text-align: center;
 }
 
 
@@ -357,7 +357,7 @@ ul.author-meta {
 .post-footer .share a {
 	display: inline-block;
 	margin: 1rem 1.6rem 1.6rem 0;
-	color: $tertiary;
+
 	text-decoration: none;
 
 	&:before {
@@ -368,9 +368,7 @@ ul.author-meta {
 		text-decoration: underline;
 	}
 
-	&:hover {
-		color: $primary;
-	}
+	
 }
 
 
@@ -448,6 +446,7 @@ ul.author-meta {
 
 .main-footer {
 	text-align: center;
+	font-family: $footer-font-family;
 	a {
 		color: $primary;
 		text-decoration: underline;
@@ -485,7 +484,7 @@ ul.author-meta {
 @media #{$small} {
 	.site-head {
 	position: fixed;
-	width: 40%;
+	width: 35%;
 	height: 100%;
 	text-align: center;
 	color: $base-bg;
@@ -496,8 +495,8 @@ ul.author-meta {
 
 	main {
 	@include clearfix;
- 	&.index-page {
-	width: 55%;
+ 	&.index-page, &.tag-content {
+	width: 65%;
 	float: right;
 	}
 	}
@@ -506,8 +505,10 @@ ul.author-meta {
 	display: block;
 	position: absolute;
 	bottom: 0;
-	padding: 5px;
-	
+	padding: 8px;
+	width: 100%;
+	font-family: $footer-font-family;
+	font-size: 0.9em;
 	a {
 		color: $base-bg;
 		text-decoration: underline;

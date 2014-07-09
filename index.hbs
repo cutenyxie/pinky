@@ -8,7 +8,7 @@
 <header class="site-head" {{#if @blog.cover}}style="background: linear-gradient(
       rgba(252, 12, 252, 0.35), 
       rgba(252, 12, 252, 0.35)
-    ), url({{@blog.cover}});"{{/if}}>
+    ), url({{@blog.cover}}); background-size: cover;"{{/if}}>
 
 	<div class="site-head-content inner">
 		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
@@ -46,3 +46,10 @@
 	{{pagination}}
 
 </main>
+
+<footer class="main-footer">
+		
+			 <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
+			 <section class="poweredby">Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a></section>
+		
+	</footer> 

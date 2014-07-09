@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Nixie+One|Calligraffitti);
 h1 {
   font-size: 2.75rem; }
 
@@ -19,7 +19,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   color: #4b4b4b;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nixie One", sans-serif;
   line-height: 1.25; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 65%;
@@ -185,7 +185,7 @@ html {
 
 body {
   color: #2b2b2b;
-  font-family: "Open Sans", sans-serif;
+  font-family: Cambria, Georgia, serif;
   font-size: 16px;
   line-height: 1.6;
   background-color: whitesmoke;
@@ -294,8 +294,6 @@ table {
   .site-head a {
     color: whitesmoke;
     text-decoration: none; }
-    .site-head a:hover {
-      opacity: 0.9; }
   .site-head .site-head-content {
     margin: 4rem 0; }
   .site-head .blog-logo {
@@ -310,12 +308,12 @@ table {
       margin: 0 auto; }
   .site-head h1.blog-title {
     font-weight: bold;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nixie One", sans-serif;
     color: whitesmoke; }
   .site-head h2.blog-description {
-    font-size: 1.125rem;
+    font-size: 1.7rem;
     font-weight: 300;
-    font-family: "Open Sans", sans-serif;
+    font-family: Calligraffitti, cursive;
     max-width: 43.75rem;
     margin-left: auto;
     margin-right: auto;
@@ -334,7 +332,7 @@ table {
 .post-meta {
   display: inline-block;
   margin: 0 0 0.25rem 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: Cambria, Georgia, serif;
   font-size: 1rem;
   color: #333333; }
   .post-meta a {
@@ -348,8 +346,12 @@ table {
   .post-template .post-header a.blog-logo {
     display: block; }
   .post-template .post-header img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
     display: block;
-    width: auto;
+    width: 30%;
     margin: 0 auto; }
 
 .post-content img {
@@ -361,7 +363,8 @@ table {
 
 .post-footer {
   position: relative;
-  padding: 4rem 0; }
+  padding: 4rem 0;
+  text-align: center; }
 
 ul.author-meta {
   list-style: none;
@@ -380,14 +383,11 @@ ul.author-meta {
 .post-footer .share a {
   display: inline-block;
   margin: 1rem 1.6rem 1.6rem 0;
-  color: #333333;
   text-decoration: none; }
   .post-footer .share a:before {
     text-decoration: none; }
   .post-footer .share a span {
     text-decoration: underline; }
-  .post-footer .share a:hover {
-    color: #c4247a; }
 
 .archive-template .site-head {
   height: auto;
@@ -422,7 +422,7 @@ ul.author-meta {
   width: 80%;
   max-width: 43.75rem;
   margin: 4rem auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nixie One", sans-serif;
   color: #333333;
   text-align: center; }
 
@@ -433,7 +433,8 @@ ul.author-meta {
     color: #891955; }
 
 .main-footer {
-  text-align: center; }
+  text-align: center;
+  font-family: Corbel, Verdana, sans-serif; }
   .main-footer a {
     color: #c4247a;
     text-decoration: underline; }
@@ -453,7 +454,7 @@ ul.author-meta {
 @media only screen and (min-width: 768px) {
   .site-head {
     position: fixed;
-    width: 40%;
+    width: 35%;
     height: 100%;
     text-align: center;
     color: whitesmoke;
@@ -477,15 +478,18 @@ ul.author-meta {
       overflow: hidden; }
     main:after {
       clear: both; }
-    main.index-page {
-      width: 55%;
+    main.index-page, main.tag-content {
+      width: 65%;
       float: right; }
 
   .site-footer {
     display: block;
     position: absolute;
     bottom: 0;
-    padding: 5px; }
+    padding: 8px;
+    width: 100%;
+    font-family: Corbel, Verdana, sans-serif;
+    font-size: 0.9em; }
     .site-footer a {
       color: whitesmoke;
       text-decoration: underline; }
