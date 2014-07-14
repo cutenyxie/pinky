@@ -1,23 +1,22 @@
 # Pinky
 
-Still working on this, clearly! But hey, let's keep a copy on GitHub.
+This theme was based on [Abstraction](http://github.com/whmii/Abstraction), which in turn was based on [Casper](https://github.com/tryghost/casper), the base for developing [Ghost](http://github.com/tryghost/ghost/) themes. 
 
-My own mods will be typed in here eventually ;)  For now, this is what was said about the original theme... 
+## Personalization
 
-# Abstration
+You'll want to put in your own facebook, twitter and website URLs. On line 17 in index.hbs you'll see a comment about that. Just edit the next three lines and away you go! :)
 
-The gulp and node-sass theme scaffold derived from [Casper](https://github.com/tryghost/casper) for developing [Ghost](http://github.com/tryghost/ghost/) themes.
-
-[Demo Site](http://abstraction.ghost.io)
 
 ## Features
 
+These features were included in Abstration and therefore in Pinky:
+
 - Gulp integration
 
-- Blazing fast Node-Sass
+- Node-Sass
 
-- The amazing power of Autoprefixer
+- Autoprefixer
 
 - Image minification
 
-- Js Hint with Stylish
+- JsHint with Stylish

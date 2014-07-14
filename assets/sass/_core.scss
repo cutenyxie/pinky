@@ -176,7 +176,7 @@ table {
 	
 	text-align: center;
 	color: $base-bg;
-	background: $secondary no-repeat center center;
+	background: $primary no-repeat center center;
 	background-size: cover;
 	@include clearfix;
 
@@ -499,7 +499,7 @@ ul.author-meta {
 	height: 100%;
 	text-align: center;
 	color: $base-bg;
-	background: $secondary no-repeat center center;
+	background: $primary no-repeat center center;
 	background-size: cover;
 	@include clearfix;
 	}

@@ -288,7 +288,7 @@ table {
 .site-head {
   text-align: center;
   color: whitesmoke;
-  background: #4b4b4b no-repeat center center;
+  background: #c4247a no-repeat center center;
   background-size: cover;
   zoom: 1; }
   .site-head:before, .site-head:after {
@@ -467,7 +467,7 @@ ul.author-meta {
     height: 100%;
     text-align: center;
     color: whitesmoke;
-    background: #4b4b4b no-repeat center center;
+    background: #c4247a no-repeat center center;
     background-size: cover;
     zoom: 1; }
     .site-head:before, .site-head:after {
