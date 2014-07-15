@@ -6,6 +6,10 @@ This theme was based on [Abstraction](http://github.com/whmii/Abstraction), whic
 
 You'll want to put in your own facebook, twitter and website URLs. On line 17 in index.hbs you'll see a comment about that. Just edit the next three lines and away you go! :)
 
+## Demo
+
+[View Live Demo](http://www.nyxie.org)
+
 
 ## Features
 
