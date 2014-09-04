@@ -397,7 +397,7 @@ ul.author-meta {
     text-decoration: underline; }
 
 .archive-template .site-head {
-  height: auto;
+  height: 100%;
   padding-bottom: 5rem; }
 
 .archive-template .site-head a {
